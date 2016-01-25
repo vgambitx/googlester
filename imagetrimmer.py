@@ -11,7 +11,6 @@
 from PIL import Image
 import os, file_lister
 def main():
-    input_folder = 'google.com.ua'
     output_folder = 'crop_google.com.ua'
     if not os.path.isdir(output_folder):
         os.mkdir(output_folder)
