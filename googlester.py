@@ -1,10 +1,15 @@
 ﻿from selenium import webdriver
+from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait # available since 2.4.0
 from selenium.webdriver.support import expected_conditions
 import time, os
 
 driver = webdriver.Firefox()
+##binary = FirefoxBinary('c:\Program Files (x86)\Mozilla Firefox\firefox.exe')
+##driver = webdriver.Firefox(firefox_binary=binary)
+driver.set_window_size(1024, 600)
+driver.maximize_window()
 url = "https://google.ru"
 delay = 2
 element_name= 'q'
