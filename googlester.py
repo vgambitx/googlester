@@ -1,8 +1,5 @@
 ﻿from selenium import webdriver
-from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
-from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait # available since 2.4.0
-from selenium.webdriver.support import expected_conditions
 import time, os
 
 driver = webdriver.Firefox('.')
