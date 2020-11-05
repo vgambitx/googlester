@@ -5,12 +5,9 @@ from selenium.webdriver.support.ui import WebDriverWait # available since 2.4.0
 from selenium.webdriver.support import expected_conditions
 import time, os
 
-driver = webdriver.Firefox()
-##binary = FirefoxBinary('c:\Program Files (x86)\Mozilla Firefox\firefox.exe')
-##driver = webdriver.Firefox(firefox_binary=binary)
-driver.set_window_size(1024, 600)
-driver.maximize_window()
-url = "https://google.ru"
+driver = webdriver.Firefox('.')
+driver.set_window_size(1024, 1024)
+url = "https://google.com.ua"
 delay = 2
 element_name= 'q'
 variants = (u'киеве', u'харькове', u'одессе', u'днепропетровске', u'донецке', u'запорожье', u'львове', u'кривом роге', u'николаеве', u'мариуполе', u'луганске', u'виннице', u'макеевке', u'севастополе', u'симферополе', u'херсоне', u'полтаве', u'чернигове', u'черкассах', u'житомире', u'сумах', u'хмельницке', u'черновцах', u'горловке', u'ровно', u'днепродзержинске', u'кировограде', u'ивано-франковске', u'кременчуге', u'тернополе', u'луцке', u'белой церкви', u'краматорске', u'мелитополе', u'керчи', u'никополе', u'ужгороде', u'славянске', u'бердянске', u'алчевске', u'павлограде', u'северодонецке', u'евпатории', u'лисичанске', u'каменец-подольске', u'броварах')

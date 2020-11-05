@@ -1,2 +1,4 @@
 *.pyc
-google.*
+*google.*
+*.log
+__pycache__
